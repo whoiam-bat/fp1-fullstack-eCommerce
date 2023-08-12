@@ -83,11 +83,11 @@ h6{
     font-size:13px
 }
 
-/*a{
-    display:inline-block;
-}*/
+a{
+    display:inline-block
+}
 
-a,a:active,a:focus,a:hover{
+a:active,a:focus,a:hover{
     text-decoration:none;
     outline:0
 }
@@ -514,7 +514,7 @@ input.au-input.au-input-xl{
     background:#fff
 }
 .main-content.page-m{
-    padding:10% 15%!important
+    padding: 10% 30% 10% 5%
 }
 
 /* 
@@ -610,7 +610,6 @@ input.au-input.au-input-xl{
     display:block;
     position:relative;
     cursor:pointer;
-    font-size:22px;
     -webkit-user-select:none;
     -moz-user-select:none;
     -ms-user-select:none;
@@ -625,9 +624,6 @@ input.au-input.au-input-xl{
     position:absolute;
     top:0;
     left:0;
-    height:22px;
-    width:22px;
-    background-color:#fff!important;
     border:2px solid #e5e5e5;
     -webkit-border-radius:2px;
     -moz-border-radius:2px;
@@ -637,7 +633,7 @@ input.au-input.au-input-xl{
     background-color:transparent
 }
 .au-checkbox input:checked~.au-checkmark{
-    background-color:#fff
+    background-color:transparent
 }
 .au-checkmark:after{
     content:"";
@@ -719,12 +715,15 @@ table.table.table-bordered th{
     font-weight:800;
     color:#0da8e4
 }
+
 .detail-section{
     margin-top:60px
 }
+
 .detail-img{
     width: 30%;
 }
+
 /**/
 
 /* 
@@ -739,7 +738,6 @@ table.table.table-bordered th{
     border-color:#0da8e4!important
 }
 a.primary-btn{
-    text-decoration: none;
     background:#05143f;
     padding:7px 20px;
     text-align:center;
