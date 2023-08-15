@@ -2,15 +2,21 @@ package com.ua.ecommerce.entity;
 
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.util.Set;
+import lombok.ToString;
 
 @Entity
 @Table(name = "product_category")
 @Getter
 @Setter
+@ToString
+@NoArgsConstructor
+@AllArgsConstructor
 public class ProductCategory {
 
     @Id
