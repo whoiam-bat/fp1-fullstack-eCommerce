@@ -16,7 +16,7 @@ export class PaymentFromService {
 
 
   getCountries(): Observable<Country[]> {
-    return this.httpClient.get<GetPesponseCountries>(this.countriesUrl).pipe(
+    return this.httpClient.get<GetResponseCountries>(this.countriesUrl).pipe(
       map(response => response._embedded.countries)
     )
   }
@@ -27,9 +27,9 @@ export class PaymentFromService {
 
     return this.httpClient.get<GetResponseStates>(searchStatesUrl).pipe(
       map(response => response._embedded.states)
-    ) 
+    )
   }
-  
+
 
 
 
@@ -57,7 +57,7 @@ export class PaymentFromService {
 }
 
 
-interface GetPesponseCountries {
+interface GetResponseCountries {
   _embedded: {
     countries: Country[]
   }
